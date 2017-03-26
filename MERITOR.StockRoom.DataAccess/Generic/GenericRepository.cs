@@ -1,4 +1,5 @@
 ﻿using log4net;
+using MERITOR.StockRoom.DataEntity;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -11,7 +12,9 @@ namespace MERITOR.StockRoom.DataAccess.Generic
     public class GenericRepository<T> : IDisposable where T : class
     {
         private readonly ILog logger;
-        dynamic entities = null;
+
+        OracleDbEntities entities = new OracleDbEntities();
+
         public GenericRepository()
         {
             logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -56,8 +59,15 @@ namespace MERITOR.StockRoom.DataAccess.Generic
         }
         public List<T> selectNativeQuery(string query)
         {
-            var result = entities.Database.SqlQuery<T>(query).ToList<T>();
-            return result;
+            try
+            {
+                var result = entities.Database.SqlQuery<T>(query).ToList<T>();
+                return result;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
         public List<T> selectNativeQueryParameters(string query, List<SqlParameter> param)
         {

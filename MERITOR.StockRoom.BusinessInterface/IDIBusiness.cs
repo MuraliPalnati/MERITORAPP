@@ -10,5 +10,6 @@ namespace MERITOR.StockRoom.BusinessInterface
     public interface IDIBusiness
     {
         List<EMP> add(List<EMP> e);
+        List<EMP> select(EMP e);
     }
 }

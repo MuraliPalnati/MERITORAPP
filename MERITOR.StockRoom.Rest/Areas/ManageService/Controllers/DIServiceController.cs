@@ -48,5 +48,27 @@ namespace MERITOR.StockRoom.Rest.Areas.Manage.Controllers
                 throw;
             }
         }
+
+        [HttpPost]
+        [ActionName("select")]
+        public HttpResponseMessage select([FromBody]EMP emp)
+        {
+            try
+            {
+                logger.Info("Executing MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select with request : " + emp);
+                //if (emp != null)
+                //{
+                var response = business.select(emp);
+                logger.Info("Response received from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select: " + response);
+                return Request.CreateResponse(HttpStatusCode.OK, response);
+                //}
+                //return null;
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.Add " + e.Message);
+                throw;
+            }
+        }
     }
 }

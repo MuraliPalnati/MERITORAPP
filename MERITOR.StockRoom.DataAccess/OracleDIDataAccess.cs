@@ -14,5 +14,10 @@ namespace MERITOR.StockRoom.DataAccess
         {
             return es;
         }
+
+        public List<EMP> select(EMP es)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

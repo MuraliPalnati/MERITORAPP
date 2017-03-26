@@ -10,5 +10,6 @@ namespace MERITOR.StockRoom.DataAccessInterface
     public interface IDIDataAccess
     {
         List<EMP> Add(List<EMP> es);
+        List<EMP> select(EMP es);
     }
 }

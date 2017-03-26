@@ -31,6 +31,23 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
             logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index");
             return View();
         }
+
+        public JsonResult select()
+        {
+            try
+            {  
+                logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.select");
+                var response = handler.select(null);
+                logger.Debug("Executed  Response from Handler");
+                return Json(response, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception e)
+            {
+                logger.Error("Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add " + e.Message);
+                throw e;
+            }
+
+        }
         public string Add()
         {
             try

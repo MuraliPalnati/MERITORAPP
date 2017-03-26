@@ -9,7 +9,8 @@ using System.Web;
 
 namespace MERITOR.StockRoom.Web.Areas.Manage.Handler
 {
-    public class NormalHandler : IDIHandler
+   
+   public class NormalHandler : IDIHandler
     {
         private readonly ILog logger = null;
         public NormalHandler()
@@ -21,6 +22,13 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Handler
             IDIBusiness busi = new DIBusiness();
             busi.add(e);
             return "NormalHandler";
+        }
+
+        public List<EMP> select(EMP e)
+        {
+            IDIBusiness busi = new DIBusiness();
+            var response = busi.select(e);
+            return response;
         }
     }
 }

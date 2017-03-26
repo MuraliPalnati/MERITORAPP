@@ -7,7 +7,8 @@ using System.Web;
 
 namespace MERITOR.StockRoom.Web.Areas.Manage.Handler
 {
-    public class WebServiceHandler : IDIHandler
+    //public class WebServiceHandler : IDIHandler
+    public class WebServiceHandler 
     {
         private readonly ILog logger = null;
         public WebServiceHandler()

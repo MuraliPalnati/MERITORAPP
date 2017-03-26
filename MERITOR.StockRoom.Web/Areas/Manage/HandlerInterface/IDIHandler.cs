@@ -10,5 +10,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Handler
     public interface IDIHandler
     {
         string Add(List<EMP> e);
+
+        List<EMP> select(EMP e);
     }
 }

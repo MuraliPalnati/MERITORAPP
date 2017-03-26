@@ -24,5 +24,15 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Handler
             logger.Info("Response received form Rest API : " + restApiPath + " : " + response);
             return "Added";
         }
+
+        public List<EMP> select(EMP e)
+        {
+            logger.Debug("Executing Add handler.");
+            string restApiPath = "DIService/select";
+            logger.Info("Invoking Rest API : " + restApiPath + " with Request : ");
+            var response = HandlerUtil<EMP>.RestPostProcessor(restApiPath,e);
+            logger.Info("Response received form Rest API : " + restApiPath + " : " + response);
+            return response;
+        }
     }
 }

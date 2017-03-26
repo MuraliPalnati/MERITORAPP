@@ -43,5 +43,25 @@ namespace MERITOR.StockRoom.Business
             }
 
         }
+
+        public List<EMP> select(EMP e)
+        {
+            try
+            {
+                logger.Info("Executing MERITOR.StockRoom.Business.DIBusiness with request : " + e);
+                //if (e != null)
+                //{
+                    var response = repo.select(e);
+                    logger.Info("Response received from MERITOR.StockRoom.Business.DIBusiness " + response);
+                    return response;
+                //}
+                //return null;
+            }
+            catch (Exception ex)
+            {
+                logger.Error("Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select " + ex.Message);
+                throw;
+            }
+        }
     }
 }
