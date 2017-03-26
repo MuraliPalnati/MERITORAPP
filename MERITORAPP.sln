@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.Web", "MERITOR.StockRoom.Web\MERITOR.StockRoom.Web.csproj", "{FF3379ED-28BB-42FC-9BAA-9084E164793C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1E2A20A-503B-426D-B772-CE8DB8F0EF64} = {C1E2A20A-503B-426D-B772-CE8DB8F0EF64}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.Rest", "MERITOR.StockRoom.Rest\MERITOR.StockRoom.Rest.csproj", "{0E27E322-01A8-406F-A3AB-7CEDE83A6F61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.Business", "MERITOR.StockRoom.Business\MERITOR.StockRoom.Business.csproj", "{ADF5BE39-D7CB-44D2-A87F-C860D3ADA3FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.BusinessInterface", "MERITOR.StockRoom.BusinessInterface\MERITOR.StockRoom.BusinessInterface.csproj", "{D75AC0D8-4038-4026-99FD-A0FED0AEAE23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.DataAccess", "MERITOR.StockRoom.DataAccess\MERITOR.StockRoom.DataAccess.csproj", "{A3A51928-2ED7-473C-949A-A5099720553D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.DataAccessInterface", "MERITOR.StockRoom.DataAccessInterface\MERITOR.StockRoom.DataAccessInterface.csproj", "{69743F4D-3E5D-478A-8C37-E8206531D8C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.WebService", "MERITOR.StockRoom.WebService\MERITOR.StockRoom.WebService.csproj", "{C1E2A20A-503B-426D-B772-CE8DB8F0EF64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.UnitTest", "MERITOR.StockRoom.UnitTest\MERITOR.StockRoom.UnitTest.csproj", "{26FCEE4F-B441-4DD8-A587-05A65DBA8C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.DataEntity", "MERITOR.StockRoom.DataEntity\MERITOR.StockRoom.DataEntity.csproj", "{F74BD76C-BCDF-4124-A70C-4A0C26E6ECF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERITOR.StockRoom.DomainEntity", "MERITOR.StockRoom.DomainEntity\MERITOR.StockRoom.DomainEntity.csproj", "{B640B35D-72DC-4CBD-9B2E-C80EC03DB30A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF3379ED-28BB-42FC-9BAA-9084E164793C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3379ED-28BB-42FC-9BAA-9084E164793C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3379ED-28BB-42FC-9BAA-9084E164793C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3379ED-28BB-42FC-9BAA-9084E164793C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E27E322-01A8-406F-A3AB-7CEDE83A6F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E27E322-01A8-406F-A3AB-7CEDE83A6F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E27E322-01A8-406F-A3AB-7CEDE83A6F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E27E322-01A8-406F-A3AB-7CEDE83A6F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF5BE39-D7CB-44D2-A87F-C860D3ADA3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF5BE39-D7CB-44D2-A87F-C860D3ADA3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF5BE39-D7CB-44D2-A87F-C860D3ADA3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF5BE39-D7CB-44D2-A87F-C860D3ADA3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D75AC0D8-4038-4026-99FD-A0FED0AEAE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75AC0D8-4038-4026-99FD-A0FED0AEAE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75AC0D8-4038-4026-99FD-A0FED0AEAE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75AC0D8-4038-4026-99FD-A0FED0AEAE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A51928-2ED7-473C-949A-A5099720553D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A51928-2ED7-473C-949A-A5099720553D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A51928-2ED7-473C-949A-A5099720553D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A51928-2ED7-473C-949A-A5099720553D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69743F4D-3E5D-478A-8C37-E8206531D8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69743F4D-3E5D-478A-8C37-E8206531D8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69743F4D-3E5D-478A-8C37-E8206531D8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69743F4D-3E5D-478A-8C37-E8206531D8C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E2A20A-503B-426D-B772-CE8DB8F0EF64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E2A20A-503B-426D-B772-CE8DB8F0EF64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E2A20A-503B-426D-B772-CE8DB8F0EF64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E2A20A-503B-426D-B772-CE8DB8F0EF64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26FCEE4F-B441-4DD8-A587-05A65DBA8C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FCEE4F-B441-4DD8-A587-05A65DBA8C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FCEE4F-B441-4DD8-A587-05A65DBA8C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26FCEE4F-B441-4DD8-A587-05A65DBA8C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74BD76C-BCDF-4124-A70C-4A0C26E6ECF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74BD76C-BCDF-4124-A70C-4A0C26E6ECF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74BD76C-BCDF-4124-A70C-4A0C26E6ECF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74BD76C-BCDF-4124-A70C-4A0C26E6ECF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B640B35D-72DC-4CBD-9B2E-C80EC03DB30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B640B35D-72DC-4CBD-9B2E-C80EC03DB30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B640B35D-72DC-4CBD-9B2E-C80EC03DB30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B640B35D-72DC-4CBD-9B2E-C80EC03DB30A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
