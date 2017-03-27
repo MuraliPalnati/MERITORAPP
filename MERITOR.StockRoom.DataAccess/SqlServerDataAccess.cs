@@ -30,18 +30,18 @@ namespace MERITOR.StockRoom.DataAccess
                 //var response = entities.EMPLOYEEs.ToList<EMPLOYEE>();
                 //var response = oracle.EMPLOYEEs.ToList<EMPLOYEE>();
 
-                var resp = oracle.Database.SqlQuery<EMP>("SELECT * FROM EMPLOYEE").ToList<EMP>();
+                //var resp = oracle.Database.SqlQuery<EMP>("SELECT * FROM EMPLOYEE").ToList<EMP>();
                 //return mapper;
                 /*string query = "SELECT* FROM EMPLOYEE";
                 GenericRepository<EMPLOYEE> a = new GenericRepository<EMPLOYEE>();
                 var resp = a.selectNativeQuery(query);*/
 
 
-                if (es == null)
-                {
+                //if (es == null)
+                //{
                     throw new Exception("HI Teja");
-                }
-                return null;
+                //}
+                //return null;
             }
             catch (Exception ex)
             {

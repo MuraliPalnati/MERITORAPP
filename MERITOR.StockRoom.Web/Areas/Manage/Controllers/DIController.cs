@@ -32,7 +32,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
             return View();
         }
 
-        public JsonResult select()
+        public ActionResult select()
         {
             try
             {  
@@ -44,7 +44,8 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
             catch (Exception e)
             {
                 logger.Error("Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add " + e.Message);
-                throw e;
+                return RedirectToAction("GlobalError", "Error",new { exception = e.Message });
+                //return RedirectToAction("Delete", "DI",new { name = e.Message });
             }
 
         }
@@ -63,7 +64,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
                 throw e;
             }
         }
-        public string Delete()
+        public string Delete(string name)
         {
             return "Deleted";
         }

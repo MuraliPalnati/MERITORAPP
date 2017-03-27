@@ -46,16 +46,16 @@ namespace MERITOR.StockRoom.Web
                         break;
                     case 500:
                         // InternalServer error
-                        Response.Redirect(" /Error/InternalServer");
+                        Response.Redirect("/Error/InternalServer");
                         break;
                     default:
-                        Response.Redirect(" /Error/GlobalError");
+                        Response.Redirect("/Error/GlobalError");
                         break; 
                 }
             }
             else
             {
-                Response.Redirect(" /Error/GlobalError");
+                Response.Redirect("/Error/GlobalError?exception="+GlobalException.Message.ToString());
             }
         }
     }

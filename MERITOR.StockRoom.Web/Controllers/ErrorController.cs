@@ -41,10 +41,18 @@ namespace MERITOR.StockRoom.Web.Controllers
             logger.Error("InternalServer");
             return View();
         }
-        public ActionResult GlobalError()
+        public ActionResult GlobalError(string exception)
         {
             logger.Error("GlobalError");
+            ViewBag.exceptionName = exception;
             return View();
         }
+
+        //public ActionResult GlobalError()
+        //{
+        //    logger.Error("GlobalError");
+        //    ViewBag.exceptionName = "exception";
+        //    return View();
+        //}
     }
 }
