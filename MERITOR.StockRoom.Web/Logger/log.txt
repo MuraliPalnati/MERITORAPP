@@ -1,1 +1,31 @@
-﻿
+﻿ ERROR 2017-03-28 00:37:02,742 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:37:40,167 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/teja' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:38:15,719 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-03-28 00:43:13,845 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:43:13,965 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-03-28 00:44:33,071 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --A public action method 'fjf' was not found on controller 'MERITOR.StockRoom.Web.Controllers.ErrorController'. 
+ ERROR 2017-03-28 00:44:33,075 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ DEBUG 2017-03-28 00:44:42,181 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index 
+ DEBUG 2017-03-28 00:45:17,319 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.select 
+ INFO 2017-03-28 00:45:17,438 MERITOR.StockRoom.Business.DIBusiness - Executing MERITOR.StockRoom.Business.DIBusiness with request :  
+ ERROR 2017-03-28 00:45:44,059 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Specified cast is not valid. 
+ ERROR 2017-03-28 00:45:47,009 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Specified cast is not valid. 
+ ERROR 2017-03-28 00:45:59,112 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Specified cast is not valid. 
+ ERROR 2017-03-28 00:46:17,750 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-03-28 00:47:00,210 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:47:00,314 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-03-28 00:47:23,606 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:48:41,162 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/teja' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:48:46,366 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-03-28 00:48:55,816 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --A public action method 'ddd' was not found on controller 'MERITOR.StockRoom.Web.Controllers.ErrorController'. 
+ ERROR 2017-03-28 00:48:59,591 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ DEBUG 2017-03-28 00:49:17,774 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index 
+ ERROR 2017-03-28 00:49:32,680 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --A public action method 'asz' was not found on controller 'MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController'. 
+ ERROR 2017-03-28 00:49:44,026 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ DEBUG 2017-03-28 00:50:54,476 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index 
+ ERROR 2017-03-28 00:50:59,482 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-03-28 00:52:42,783 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:54:45,098 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/' was not found or does not implement IController. 
+ ERROR 2017-03-28 00:54:57,534 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-03-28 01:00:01,901 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The controller for path '/' was not found or does not implement IController. 
+ ERROR 2017-03-28 01:00:09,540 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
