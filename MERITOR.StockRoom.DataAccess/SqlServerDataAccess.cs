@@ -39,8 +39,7 @@ namespace MERITOR.StockRoom.DataAccess
 
                 if (es == null)
                 {
-                    EMP e = new EMP();
-                    e.ErrorMessage{ "test","test"}
+                    throw new Exception("HI Teja");
                 }
                 return null;
             }

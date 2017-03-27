@@ -208,9 +208,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
@@ -222,6 +225,7 @@
     <Compile Include="Areas\Manage\Handler\NormalHandler.cs" />
     <Compile Include="Areas\Manage\Handler\WebServiceHandler.cs" />
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="GenericHandler\HandlerUtil.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -239,6 +243,11 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Service References\DIWebService\DIWebService.wsdl" />
     <Content Include="unity.config" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Error\InternalServer.cshtml" />
+    <Content Include="Views\Error\BadRequest.cshtml" />
+    <Content Include="Views\Error\Unauthorized.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
