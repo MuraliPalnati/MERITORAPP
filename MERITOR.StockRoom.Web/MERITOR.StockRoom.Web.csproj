@@ -248,6 +248,7 @@
     <Content Include="Views\Error\InternalServer.cshtml" />
     <Content Include="Views\Error\BadRequest.cshtml" />
     <Content Include="Views\Error\Unauthorized.cshtml" />
+    <Content Include="Views\Error\GlobalError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -261,6 +262,7 @@
     <Folder Include="Areas\Load\Models\" />
     <Folder Include="Areas\Manage\Models\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MERITOR.StockRoom.BusinessInterface\MERITOR.StockRoom.BusinessInterface.csproj">
