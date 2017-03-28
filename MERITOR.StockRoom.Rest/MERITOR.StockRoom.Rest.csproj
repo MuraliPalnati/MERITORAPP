@@ -159,6 +159,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\LoadService\Controllers\TestServiceController.cs" />
     <Compile Include="Areas\LoadService\LoadAreaRegistration.cs" />
     <Compile Include="Areas\ManageService\Controllers\DIServiceController.cs" />
     <Compile Include="Areas\ManageService\ManageAreaRegistration.cs" />
@@ -181,7 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\LoadService\Controllers\" />
     <Folder Include="Areas\LoadService\Views\Shared\" />
     <Folder Include="Areas\ManageService\Views\Shared\" />
   </ItemGroup>
