@@ -227,6 +227,7 @@
     <Compile Include="Areas\Manage\ManageAreaRegistration.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HIController.cs" />
+    <Compile Include="GenericHandler\ErrorHandler.cs" />
     <Compile Include="GenericHandler\HandlerUtil.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -250,6 +251,7 @@
     <Content Include="Views\Error\BadRequest.cshtml" />
     <Content Include="Views\Error\Unauthorized.cshtml" />
     <Content Include="Views\Error\GlobalError.cshtml" />
+    <Content Include="Views\Shared\GlobalErrorHandler.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -264,7 +266,6 @@
     <Folder Include="Areas\Manage\Models\" />
     <Folder Include="Models\" />
     <Folder Include="Views\HI\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MERITOR.StockRoom.BusinessInterface\MERITOR.StockRoom.BusinessInterface.csproj">

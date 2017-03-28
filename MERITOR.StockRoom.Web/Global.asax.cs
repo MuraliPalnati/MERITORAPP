@@ -22,10 +22,10 @@ namespace MERITOR.StockRoom.Web
         protected void Application_Error(object sender, EventArgs e)
         {
             Exception GlobalException = Server.GetLastError();
-            ILog logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            logger.Error("Gloabl Error Handler --" + GlobalException.Message);
             Server.ClearError();
             HttpException httpException = GlobalException as HttpException;
+            //ILog logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //logger.Error("Gloabl Error Handler --" + GlobalException.Message);
             //Response.Redirect("/Error/GlobalError");
             //Response.Write(httpException.Message);
             if (httpException != null)
@@ -55,7 +55,7 @@ namespace MERITOR.StockRoom.Web
             }
             else
             {
-                Response.Redirect("/Error/GlobalError?exception="+GlobalException.Message.ToString());
+                Response.Redirect("/Error/GlobalError");
             }
         }
     }

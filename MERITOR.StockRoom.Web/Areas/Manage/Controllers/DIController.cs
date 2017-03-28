@@ -1,6 +1,7 @@
 ﻿using log4net;
 using MERITOR.StockRoom.DomainEntity;
 using MERITOR.StockRoom.Web.Areas.Manage.Handler;
+using MERITOR.StockRoom.Web.GenericHandler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
             logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index");
             return View();
         }
-
+        [ErrorHandler]
         public ActionResult select()
         {
             try
@@ -44,7 +45,8 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
             catch (Exception e)
             {
                 logger.Error("Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add " + e.Message);
-                return RedirectToAction("GlobalError", "Error",new { exception = e.Message });
+                throw e;
+                //return RedirectToAction("GlobalError", "Error",new { exception = e.Message });
                 //return RedirectToAction("Delete", "DI",new { name = e.Message });
             }
 
