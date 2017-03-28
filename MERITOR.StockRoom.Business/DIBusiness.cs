@@ -10,6 +10,8 @@ using log4net;
 using MERITOR.StockRoom.DataAccessInterface;
 using MERITOR.StockRoom.DataAccess;
 using Microsoft.Practices.Unity;
+using System.Resources;
+using MERITOR.StockRoom.Web.GenericHandler;
 
 namespace MERITOR.StockRoom.Business
 {
@@ -53,12 +55,13 @@ namespace MERITOR.StockRoom.Business
                 //{
                 if (e != null)
                 {
-                    e.ErrorMessage.Add("message1", "Object is null");
+                    //e.ErrorMessage.Add("message1", "Object is null");
                 }
                 else
                 {
-                    e = new EMP();
-                    e.ErrorMessage.Add("message2", "Object is not null");
+                    //e = new EMP();
+                    //e.ErrorMessage.Add("message2", "Object is not null");
+                    ResourceFileHandlerBusiness.writeResourceFile("message2", "Object is not null");
                 }
                 var response = repo.select(e);
                 logger.Info("Response received from MERITOR.StockRoom.Business.DIBusiness " + response);

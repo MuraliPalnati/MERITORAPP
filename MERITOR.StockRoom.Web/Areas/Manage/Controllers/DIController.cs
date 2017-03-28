@@ -3,8 +3,10 @@ using MERITOR.StockRoom.DomainEntity;
 using MERITOR.StockRoom.Web.Areas.Manage.Handler;
 using MERITOR.StockRoom.Web.GenericHandler;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Resources;
 using System.Web;
 using System.Web.Mvc;
 
@@ -40,6 +42,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
                 logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.select");
                 var response = handler.select(null);
                 logger.Debug("Executed  Response from Handler");
+                string value= ResourceFileHandler.readResourceFile("message2");
                 return Json(response, JsonRequestBehavior.AllowGet);
             }
             catch (Exception e)
