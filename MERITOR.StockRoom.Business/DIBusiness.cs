@@ -20,7 +20,7 @@ namespace MERITOR.StockRoom.Business
         public DIBusiness()
         {
             logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            IUnityContainer  cont = Program.DependcyInjection();
+            IUnityContainer cont = Program.DependcyInjection();
             repo = cont.Resolve<IDIDataAccess>();
         }
         public List<EMP> add(List<EMP> e)
@@ -51,9 +51,18 @@ namespace MERITOR.StockRoom.Business
                 logger.Info("Executing MERITOR.StockRoom.Business.DIBusiness with request : " + e);
                 //if (e != null)
                 //{
-                    var response = repo.select(e);
-                    logger.Info("Response received from MERITOR.StockRoom.Business.DIBusiness " + response);
-                    return response;
+                if (e != null)
+                {
+                    e.ErrorMessage.Add("message1", "Object is null");
+                }
+                else
+                {
+                    e = new EMP();
+                    e.ErrorMessage.Add("message2", "Object is not null");
+                }
+                var response = repo.select(e);
+                logger.Info("Response received from MERITOR.StockRoom.Business.DIBusiness " + response);
+                return response;
                 //}
                 //return null;
             }

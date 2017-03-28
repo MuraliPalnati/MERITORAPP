@@ -31,7 +31,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
 
         }
-        public static T2 ObjectMapp(T1 input)
+        public static T2 objectMapp(T1 input)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             catch (Exception ex)
             {
                 ILog logger = logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-                logger.Error("Error from MERITOR.StockRoom.DataAccess.Generic.GenericAutoMapper.listObjectMapper" + ex.Message);
+                logger.Error("Error from MERITOR.StockRoom.DataAccess.Generic.GenericAutoMapper.objectMapp" + ex.Message);
                 throw new Exception("Error in AutoMapping of the Object.Exception is " + ex.Message);
             }
         }
