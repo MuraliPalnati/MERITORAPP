@@ -15,7 +15,7 @@ namespace MERITOR.StockRoom.DomainEntity
         public decimal ID { get; set; }
         public string NAME { get; set; }
         public string PASSWORD { get; set; }
-
-        public IDictionary<string, string> ErrorMessage { get; set; }
+        //public IDictionary<string, string> ErrorMessage { get; set; }
+        public string teja { get; set; }
     }
 }
