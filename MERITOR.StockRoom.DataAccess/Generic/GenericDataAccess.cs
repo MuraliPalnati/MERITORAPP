@@ -2,6 +2,7 @@
 using MERITOR.StockRoom.DataEntity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -50,7 +51,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
                 if (edit != null)
                 {
                     var entry = entities.Entry(edit);
-                    //entry.State = EntityState.Modified;
+                    entry.State = EntityState.Modified;
                     entities.SaveChanges();
                     return edit;
                 }

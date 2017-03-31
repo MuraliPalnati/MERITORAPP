@@ -12,11 +12,8 @@ using MERITOR.StockRoom.Util;
 
 namespace MERITOR.StockRoom.DataAccess
 {
-    public class SqlServerDataAccess : IDIDataAccess
+    public class SqlServerDataAccess : BaseDataAccess, IDIDataAccess
     {
-
-        //SqlServerDbEntities entities = new SqlServerDbEntities();
-        OracleDbEntities oracle = new OracleDbEntities();
         public List<EMP> Add(List<EMP> es)
         {
             return es;
@@ -26,14 +23,12 @@ namespace MERITOR.StockRoom.DataAccess
         {
             try
             {
-
-                //var response = entities.EMPLOYEEs.ToList<EMPLOYEE>();
-                //var response = oracle.EMPLOYEEs.ToList<EMPLOYEE>();
-                var resp = oracle.Database.SqlQuery<EMPLOYEE>("SELECT * FROM EMPLOYEE").ToList<EMPLOYEE>();
-                var response = GenericAutoMapper<EMPLOYEE,EMP>.listObjectMapper(resp);
+                getDbEntity("Oracle");
+                var resp = oracleDBentities.Database.SqlQuery<EMPLOYEE>("SELECT * FROM EMPLOYEE").ToList<EMPLOYEE>();
+                var response = GenericAutoMapper<EMPLOYEE, EMP>.listObjectMapper(resp);
+                oracleDBentities.Dispose();
                 return response;
 
-                //return mapper;
                 /*string query = "SELECT* FROM EMPLOYEE";
                 GenericRepository<EMPLOYEE> a = new GenericRepository<EMPLOYEE>();
                 var resp = a.selectNativeQuery(query);*/

@@ -91,3 +91,4 @@
  ERROR 2017-03-29 03:45:49,650 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
  ERROR 2017-03-29 03:46:28,613 MERITOR.StockRoom.Web.GenericHandler.ResourceFileHandler - Error from MERITOR.StockRoom.Web.GenericHandler.ResourceFileHandler.readResourceFileCould not find a part of the path 'C:\Program Files (x86)\IIS Express\~\App_GlobalResources\ErrorMessages.resx'. 
  ERROR 2017-03-29 03:46:28,624 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Error in Reading to the resource File.Could not find a part of the path 'C:\Program Files (x86)\IIS Express\~\App_GlobalResources\ErrorMessages.resx'. 
+ ERROR 2017-04-01 01:25:40,433 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 

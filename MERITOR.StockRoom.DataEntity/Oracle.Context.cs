@@ -19,7 +19,6 @@ namespace MERITOR.StockRoom.DataEntity
             : base("name=OracleDbEntities")
         {
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

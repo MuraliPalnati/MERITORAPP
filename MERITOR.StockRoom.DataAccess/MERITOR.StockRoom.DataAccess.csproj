@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Generic\BaseDataAccess.cs" />
     <Compile Include="Generic\GenericDataAccess.cs" />
     <Compile Include="Generic\IGenericDataAccess.cs" />
     <Compile Include="SqlServerDataAccess.cs" />
