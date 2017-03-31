@@ -6,7 +6,7 @@ using System.Linq;
 using System.Resources;
 using System.Web;
 
-namespace MERITOR.StockRoom.Web.GenericHandler
+namespace MERITOR.StockRoom.Util
 {
     public class ResourceFileHandler
     {
@@ -14,7 +14,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
         {
             try
             {
-                using (ResXResourceWriter resx = new ResXResourceWriter(@"~\App_GlobalResources\ErrorMessages.resx"))
+                using (ResXResourceWriter resx = new ResXResourceWriter(HttpContext.Current.Server.MapPath(@"~\App_GlobalResources\ErrorMessages.resx")))
                 {
                     resx.AddResource(keyInput, valueInput);
                 }
@@ -22,7 +22,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             catch (Exception ex)
             {
                 ILog logger = logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-                logger.Error("Error from MERITOR.StockRoom.Web.GenericHandler.ResourceFileHandler.writeResourceFile" + ex.Message);
+                logger.Error("Error from MERITOR.StockRoom.Util.ResourceFileHandler.writeResourceFile" + ex.Message);
                 throw new Exception("Error in Writing to the resource File." + ex.Message);
             }
         }
@@ -31,7 +31,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             try
             {
                 string returnvalue = string.Empty;
-                using (ResXResourceReader resxReader = new ResXResourceReader(@"~\App_GlobalResources\ErrorMessages.resx"))
+                using (ResXResourceReader resxReader = new ResXResourceReader(HttpContext.Current.Server.MapPath(@"~\App_GlobalResources\ErrorMessages.resx")))
                 {
                     foreach (DictionaryEntry entry in resxReader)
                     {
@@ -46,7 +46,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             catch (Exception ex)
             {
                 ILog logger = logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-                logger.Error("Error from MERITOR.StockRoom.Web.GenericHandler.ResourceFileHandler.readResourceFile" + ex.Message);
+                logger.Error("Error from MERITOR.StockRoom.Util.ResourceFileHandler.readResourceFile" + ex.Message);
                 throw new Exception("Error in Reading to the resource File." + ex.Message);
             }
         }

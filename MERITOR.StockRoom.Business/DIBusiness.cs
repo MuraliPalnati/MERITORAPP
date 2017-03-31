@@ -1,17 +1,12 @@
-﻿using MERITOR.StockRoom.Business;
-using MERITOR.StockRoom.BusinessInterface;
+﻿using MERITOR.StockRoom.BusinessInterface;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MERITOR.StockRoom.DomainEntity;
 using log4net;
 using MERITOR.StockRoom.DataAccessInterface;
-using MERITOR.StockRoom.DataAccess;
 using Microsoft.Practices.Unity;
-using System.Resources;
-using MERITOR.StockRoom.Web.GenericHandler;
+using MERITOR.StockRoom.Util;
+using System.Linq;
 
 namespace MERITOR.StockRoom.Business
 {
@@ -51,23 +46,25 @@ namespace MERITOR.StockRoom.Business
             try
             {
                 logger.Info("Executing MERITOR.StockRoom.Business.DIBusiness with request : " + e);
-                //if (e != null)
-                //{
+                EMP employee = new EMP();
+                employee.ErrorMessage = new Dictionary<string, string>();
+                employee.ErrorMessage.Clear();
+                logger.Info("Executing MERITOR.StockRoom.Business.DIBusiness with request : " + e);
                 if (e != null)
                 {
-                    //e.ErrorMessage.Add("message1", "Object is null");
+                    employee.ErrorMessage.Add("message1", "Object is null");
                 }
                 else
                 {
-                    //e = new EMP();
-                    //e.ErrorMessage.Add("message2", "Object is not null");
-                    ResourceFileHandlerBusiness.writeResourceFile("message2", "Object is not null");
+                    employee.ErrorMessage.Add("message2", "Object is not null");
+                    ResourceFileHandler.writeResourceFile("message2", "Object is not null");
                 }
                 var response = repo.select(e);
+
+                var firstItem = response.First<EMP>();
+                firstItem.ErrorMessage = employee.ErrorMessage;
                 logger.Info("Response received from MERITOR.StockRoom.Business.DIBusiness " + response);
                 return response;
-                //}
-                //return null;
             }
             catch (Exception ex)
             {

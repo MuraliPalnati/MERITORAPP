@@ -125,7 +125,6 @@
       <HintPath>..\packages\System.Web.Http.Common.4.0.20126.16343\lib\net40\System.Web.Http.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -235,7 +234,6 @@
     <Compile Include="Controllers\HIController.cs" />
     <Compile Include="GenericHandler\ErrorHandler.cs" />
     <Compile Include="GenericHandler\HandlerUtil.cs" />
-    <Compile Include="GenericHandler\ResourceFileHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -290,6 +288,10 @@
     <ProjectReference Include="..\MERITOR.StockRoom.Rest\MERITOR.StockRoom.Rest.csproj">
       <Project>{0e27e322-01a8-406f-a3ab-7cede83a6f61}</Project>
       <Name>MERITOR.StockRoom.Rest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MERITOR.StockRoom.Util\MERITOR.StockRoom.Util.csproj">
+      <Project>{e9a2810d-ed25-43be-bef5-44dd286c5e98}</Project>
+      <Name>MERITOR.StockRoom.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

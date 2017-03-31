@@ -1,5 +1,6 @@
 ﻿using log4net;
 using MERITOR.StockRoom.DomainEntity;
+using MERITOR.StockRoom.Util;
 using MERITOR.StockRoom.Web.Areas.Manage.Handler;
 using MERITOR.StockRoom.Web.GenericHandler;
 using System;

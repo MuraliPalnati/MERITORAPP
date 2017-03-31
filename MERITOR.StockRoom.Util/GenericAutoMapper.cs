@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MERITOR.StockRoom.DataAccess.Generic
+namespace MERITOR.StockRoom.Util
 {
     public sealed class GenericAutoMapper<T1, T2>
     {
@@ -26,7 +26,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             catch (Exception ex)
             {
                 ILog logger = logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-                logger.Error("Error from MERITOR.StockRoom.DataAccess.Generic.GenericAutoMapper.listObjectMapper" + ex.Message);
+                logger.Error("Error from MERITOR.StockRoom.Util.GenericAutoMapper.listObjectMapper" + ex.Message);
                 throw new Exception("Error in AutoMapping of the Objects.Exception is " + ex.Message);
             }
 
@@ -45,7 +45,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             catch (Exception ex)
             {
                 ILog logger = logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-                logger.Error("Error from MERITOR.StockRoom.DataAccess.Generic.GenericAutoMapper.objectMapp" + ex.Message);
+                logger.Error("Error from MERITOR.StockRoom.Util.GenericAutoMapper.objectMapp" + ex.Message);
                 throw new Exception("Error in AutoMapping of the Object.Exception is " + ex.Message);
             }
         }

@@ -8,6 +8,7 @@ using MERITOR.StockRoom.DomainEntity;
 using MERITOR.StockRoom.DataEntity;
 using MERITOR.StockRoom.DataAccess.Generic;
 using System.Net;
+using MERITOR.StockRoom.Util;
 
 namespace MERITOR.StockRoom.DataAccess
 {

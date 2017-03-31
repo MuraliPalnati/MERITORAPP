@@ -34,10 +34,6 @@
       <HintPath>..\packages\AutoMapper.6.0.2\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="AutoMapper.EF6, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.EF6.1.0.0\lib\net45\AutoMapper.EF6.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="DelegateDecompiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93b26a10a04705bd, processorArchitecture=MSIL">
       <HintPath>..\packages\DelegateDecompiler.0.23.0\lib\net40-client\DelegateDecompiler.dll</HintPath>
       <Private>True</Private>
@@ -73,8 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Generic\GenericAutoMapper.cs" />
-    <Compile Include="Generic\GenericRepository.cs" />
+    <Compile Include="Generic\GenericDataAccess.cs" />
     <Compile Include="SqlServerDataAccess.cs" />
     <Compile Include="OracleDIDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +86,10 @@
     <ProjectReference Include="..\MERITOR.StockRoom.DomainEntity\MERITOR.StockRoom.DomainEntity.csproj">
       <Project>{b640b35d-72dc-4cbd-9b2e-c80ec03db30a}</Project>
       <Name>MERITOR.StockRoom.DomainEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MERITOR.StockRoom.Util\MERITOR.StockRoom.Util.csproj">
+      <Project>{E9A2810D-ED25-43BE-BEF5-44DD286C5E98}</Project>
+      <Name>MERITOR.StockRoom.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
