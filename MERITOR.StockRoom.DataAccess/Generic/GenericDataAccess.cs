@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MERITOR.StockRoom.DataAccess.Generic
 {
-    public class GenericDataAccess<T> : IDisposable where T : class
+    public class GenericDataAccess<T> : IDisposable, IGenericDataAccess<T> where T : class
     {
         private readonly ILog logger;
 

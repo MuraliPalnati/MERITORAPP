@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generic\GenericDataAccess.cs" />
+    <Compile Include="Generic\IGenericDataAccess.cs" />
     <Compile Include="SqlServerDataAccess.cs" />
     <Compile Include="OracleDIDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
