@@ -3,6 +3,7 @@ using MERITOR.StockRoom.DomainEntity;
 using MERITOR.StockRoom.Util;
 using MERITOR.StockRoom.Web.Areas.Manage.Handler;
 using MERITOR.StockRoom.Web.GenericHandler;
+using MERITOR.StockRoom.Web.Security;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ using System.Web.Mvc;
 
 namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
 {
+  
     public class DIController : Controller
     {
         private readonly ILog logger = null;
@@ -30,8 +32,10 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
 
 
         // GET: Manage/DI
+        [CustomAuthorize(Roles ="Admin")]
         public ActionResult Index()
         {
+            
             logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index");
             return View();
         }

@@ -125,3 +125,78 @@
  ERROR 2017-04-01 16:53:05,687 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
  ERROR 2017-04-01 16:53:05,688 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
  ERROR 2017-04-01 16:53:05,691 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-01 19:34:27,323 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 19:34:28,632 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 19:38:51,540 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 19:40:17,880 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 19:41:01,529 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 19:55:55,160 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 20:54:22,319 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-01 20:55:00,103 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-01 21:00:16,270 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 21:57:25,029 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:22:12,385 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:24:10,145 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:26:43,245 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:30:49,397 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:33:57,222 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:35:07,170 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:40:13,462 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:45:25,622 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-01 22:45:47,155 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-01 22:46:10,709 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-01 22:46:10,716 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-01 22:48:38,631 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:50:56,890 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 22:51:28,262 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-01 22:51:28,267 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-01 22:57:56,805 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 23:02:55,896 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 23:25:27,928 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 00:28:23,753 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 00:32:28,645 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-02 00:32:28,725 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-02 00:32:38,681 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-02 00:32:45,086 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 00:44:47,652 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Manage/Views/DI/Error.aspx
+~/Areas/Manage/Views/DI/Error.ascx
+~/Areas/Manage/Views/Shared/Error.aspx
+~/Areas/Manage/Views/Shared/Error.ascx
+~/Views/DI/Error.aspx
+~/Views/DI/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Areas/Manage/Views/DI/Error.cshtml
+~/Areas/Manage/Views/DI/Error.vbhtml
+~/Areas/Manage/Views/Shared/Error.cshtml
+~/Areas/Manage/Views/Shared/Error.vbhtml
+~/Views/DI/Error.cshtml
+~/Views/DI/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 00:44:47,667 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 

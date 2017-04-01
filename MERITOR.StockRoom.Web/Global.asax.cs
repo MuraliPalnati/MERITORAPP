@@ -55,6 +55,8 @@ namespace MERITOR.StockRoom.Web
             }
             else
             {
+                ILog logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+                logger.Error("Gloabl Error Handler --" + GlobalException.Message);
                 Response.Redirect("/Error/GlobalError");
             }
         }

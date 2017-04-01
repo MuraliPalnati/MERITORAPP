@@ -1,0 +1,25 @@
+﻿@model MERITOR.StockRoom.DomainEntity.Login
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/Meritor/Login.js"></script>
+<h2>LOGIN PAGE</h2><br />
+@ViewBag.ErrorMessage
+    <div>
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.Label("UserName")<br />
+            @Html.TextBoxFor(m => m.UserName)<br />
+            @Html.Label("Password")<br />
+            @Html.TextBoxFor(m => m.Password)<br /><br />
+            <input type="submit" value="Login" id="Login" />
+        }
+        @*@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                @Html.Label("Roles")<br />
+                @Html.TextBoxFor(m => m.Roles)<br />
+
+                <input type="submit" value="Role" id="Role" />
+            }*@
+    </div>

@@ -14,6 +14,31 @@ namespace MERITOR.StockRoom.Web.Areas.Load.Controllers
             return View();
         }
         /*
+         AJAX CALL
+         $(document).ready(function () {
+    $('#UserName').change(function () {
+        alert('HI');
+        var mctrBuProfile = {
+            UserName: $('#UserName').val(),
+        };
+        //var Input = JSON.stringify(mctrBuProfile);
+        //$.ajax({
+        //    url: '/Account/Login',
+        //    type: 'POST',
+        //    data: Input,
+        //    contentType: 'application/json',
+        //    success: successFn,
+        //    error: errorFn,
+        //    cache: false
+        //});
+        //var successFn = function (data, response, xhr) {
+        //    alert('successFn');
+        //};
+        //var errorFn = function (data, response, hhr) {
+        //    alert('errorFn');
+        //};
+    });
+});
          public class EMPLOYEEsController : Controller
     {
         private TEJAEntities db = new TEJAEntities();
