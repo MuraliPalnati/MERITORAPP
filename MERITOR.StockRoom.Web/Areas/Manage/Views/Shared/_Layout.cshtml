@@ -7,7 +7,7 @@
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    @Html.ActionLink("Logout", "LogOut", "Account")
+    <h2>@Html.ActionLink("Logout", "LogOut", "Account", new { area = "" }, null)</h2>
 
     <div class="container body-content">
         @RenderBody()
