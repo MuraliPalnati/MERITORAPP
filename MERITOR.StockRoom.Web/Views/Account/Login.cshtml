@@ -5,14 +5,19 @@
 <script src="~/Scripts/Meritor/Login.js"></script>
 <h2>LOGIN PAGE</h2><br />
 @ViewBag.ErrorMessage
+
+@*<form id="test">*@
     <div>
 
         @using (Html.BeginForm("Login", "Account", FormMethod.Post))
         {
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             @Html.Label("UserName")<br />
             @Html.TextBoxFor(m => m.UserName)<br />
+            @Html.ValidationMessageFor(m => m.UserName)<br/>
             @Html.Label("Password")<br />
-            @Html.TextBoxFor(m => m.Password)<br /><br />
+            @Html.PasswordFor(m => m.Password)<br /><br />
+            @Html.ValidationMessageFor(m => m.Password)<br />
             <input type="submit" value="Login" id="Login" />
         }
         @*@using (Html.BeginForm("Login", "Account", FormMethod.Post))
@@ -23,3 +28,4 @@
                 <input type="submit" value="Role" id="Role" />
             }*@
     </div>
+@*</form>*@

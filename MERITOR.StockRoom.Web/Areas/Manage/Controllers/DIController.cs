@@ -32,7 +32,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
 
 
         // GET: Manage/DI
-        [CustomAuthorize(Roles ="Admin")]
+        //[CustomAuthorize]
         public ActionResult Index()
         {
             

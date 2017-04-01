@@ -9,19 +9,17 @@ namespace MERITOR.StockRoom.Web.Security
 {
     public class CustomAuthorize : AuthorizeAttribute
     {
-        public void getUserRoles(string id)
+
+        public override void OnAuthorization(AuthorizationContext filterContext)
         {
-            string[] roles = new string[] { "Admin", "view" };
+            if (string.IsNullOrEmpty(SessionPerister.ID))
+                filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Account", Action = "Logout" }));
+            else
+            {
+                Roles = SessionPerister.ASSIGNEDROLES;
+                filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Home", Action = "Logout" }));
 
-            Roles = "view";
-        }
-
-
-        public override void OnAuthorization(AuthorizationContext actionContext)
-        {
-            getUserRoles("10");
-
-            
+            }
         }
 
         protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
@@ -30,7 +28,7 @@ namespace MERITOR.StockRoom.Web.Security
             {
                 filterContext.HttpContext.Response.StatusCode = 401;
                 filterContext.HttpContext.Response.End();
-                filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Error", Action = "GlobalError" }));
+                filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Error", Action = "Unauthorized" }));
             }
 
             base.HandleUnauthorizedRequest(filterContext);

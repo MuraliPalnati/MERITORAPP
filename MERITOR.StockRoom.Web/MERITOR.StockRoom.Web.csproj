@@ -172,7 +172,6 @@
     <Content Include="Areas\Manage\Views\web.config" />
     <Content Include="Areas\Load\Views\web.config" />
     <Content Include="Areas\Manage\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Manage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Load\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Load\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Load\Views\Test\Index.cshtml" />
@@ -187,6 +186,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="App.config" />
+    <Content Include="Areas\Manage\Views\Shared\_Layout.cshtml" />
     <None Include="Properties\PublishProfiles\WEB.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />

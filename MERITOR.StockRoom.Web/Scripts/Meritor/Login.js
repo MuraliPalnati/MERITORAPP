@@ -5,12 +5,12 @@
             UserName: $('#UserName').val(),
         };
         var successFn = function (data, response, xhr) {
-            alert('successFn');
+            //alert('successFn');
         };
         var errorFn = function (data, response, hhr) {
-            alert('errorFn');
+            //alert('errorFn');
         };
-        mer.ajaxCall('/Account/Login', 'POST', login, successFn, errorFn);
+        meritor.ajaxCall('/Account/Login', 'POST', login, successFn, errorFn);
 
         //meritor.ajaxCall('/Account/Teja', 'GET', null, successFn, errorFn);
     });

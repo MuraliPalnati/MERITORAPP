@@ -19,30 +19,39 @@ namespace MERITOR.StockRoom.Web.Controllers
         [HttpPost]
         public ActionResult Login(Login login)
         {
-            List<Login> log = new List<Login>()
+            if (ModelState.IsValid)
+            {
+                List<Login> log = new List<Login>()
             {
                 new Login {Id=1, UserName = "teja" , Password = "teja",Roles="Admin" },
                 new Login {Id=2, UserName = "tej" , Password = "tej",Roles="View" },
                 new Login {Id=3, UserName = "te" , Password = "te",Roles="View" },
                 new Login {Id=4, UserName = "t" , Password = "t",Roles="Admin" },
             };
-            var response = log.Where(x => (x.UserName == login.UserName && x.Password == login.Password)).FirstOrDefault<Login>();
-            if (response != null)
-            {
-                SessionPerister.ASSIGNEDROLES = response.Roles;
-                SessionPerister.ID = response.Id.ToString();
-                SessionPerister.NAME = response.UserName;
+                var response = log.Where(x => (x.UserName == login.UserName && x.Password == login.Password)).FirstOrDefault<Login>();
+                if (response != null)
+                {
+                    SessionPerister.ASSIGNEDROLES = response.Roles;
+                    SessionPerister.ID = response.Id.ToString();
+                    SessionPerister.NAME = response.UserName;
 
-                return RedirectToAction("Index","DI",new { area = "Manage"});
+                    return RedirectToAction("Index", "DI", new { area = "Manage" });
+                }
+                else
+                {
+                    return RedirectToAction("Login", "Account", TempData["ExMessage"] = "Invaid User Please Login Again");
+                    //return RedirectToAction("Login", "Account");
+                }
             }
             else
             {
-                return RedirectToAction("Login", "Account",TempData["ExMessage"]= "Invaid User Please Login Again");
+                return View(login);
             }
-            
+
         }
         public ActionResult LogOut()
         {
+            Session.RemoveAll();
             Session.Abandon();
             return View();
         }
