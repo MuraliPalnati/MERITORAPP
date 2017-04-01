@@ -21,7 +21,7 @@ namespace MERITOR.StockRoom.Web.Areas.Load.Controllers
         // GET: EMPLOYEEs
         public ActionResult Index()
         {
-            return View(db.EMPLOYEEs.ToList());
+            return View("db.EMPLOYEEs.ToList()");
         }
 
         // GET: EMPLOYEEs/Details/5
