@@ -11,7 +11,7 @@ namespace MERITOR.StockRoom.Web.Areas.Load.Controllers
         // GET: Load/Test
         public ActionResult Index()
         {
-            return View("teja");
+            return View();
         }
         /*
          public class EMPLOYEEsController : Controller
@@ -21,7 +21,7 @@ namespace MERITOR.StockRoom.Web.Areas.Load.Controllers
         // GET: EMPLOYEEs
         public ActionResult Index()
         {
-            return View("db.EMPLOYEEs.ToList()");
+            return View(db.EMPLOYEEs.ToList());
         }
 
         // GET: EMPLOYEEs/Details/5
