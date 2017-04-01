@@ -36,7 +36,7 @@ namespace MERITOR.StockRoom.Business
             catch (Exception ex)
             {
                 logger.Error("Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.Add " + ex.Message);
-                throw;
+                 throw new Exception(ex.Message);
             }
 
         }
@@ -69,7 +69,7 @@ namespace MERITOR.StockRoom.Business
             catch (Exception ex)
             {
                 logger.Error("Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select " + ex.Message);
-                throw;
+                 throw new Exception(ex.Message);
             }
         }
     }

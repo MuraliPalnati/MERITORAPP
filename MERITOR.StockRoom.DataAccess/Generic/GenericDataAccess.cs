@@ -41,7 +41,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
             catch (Exception ex)
             {
-                throw ex;
+                 throw new Exception(ex.Message);
             }
         }
         public List<T> edit(List<T> edit)
@@ -62,7 +62,8 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
             catch (Exception ex)
             {
-                throw ex;
+                 throw new Exception(ex.Message);
+               
             }
         }
         public List<T> delete(List<T> delete)
@@ -86,7 +87,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
             catch (Exception ex)
             {
-                throw ex;
+                 throw new Exception(ex.Message);
             }
 
         }
@@ -99,7 +100,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
             catch (Exception ex)
             {
-                throw ex;
+                 throw new Exception(ex.Message);
             }
         }
         public List<T> selectNativeQueryParameters(string query, List<SqlParameter> param)
@@ -111,7 +112,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
             catch (Exception ex)
             {
-                throw ex;
+                 throw new Exception(ex.Message);
             }
         }
         public List<T> selectEF(List<T> select)
@@ -123,7 +124,7 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
             catch (Exception ex)
             {
-                throw ex;
+                 throw new Exception(ex.Message);
             }
         }
         public int insertNativeQueryParameters(string query, List<SqlParameter> param)
@@ -135,12 +136,35 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
             catch (Exception ex)
             {
-                throw ex;
+                 throw new Exception(ex.Message);
             }
         }
-        void IDisposable.Dispose()
+        //void IDisposable.Dispose()
+        //{
+        //    entities.Dispose();
+        //}
+        public void Dispose()
         {
-            entities.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        ~GenericDataAccess()
+        {
+            // Finalizer calls Dispose(false)  
+            //Dispose(false);
+            Dispose(true);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                // free managed resources  
+                if (entities!=null)
+                {
+                    entities.Dispose();
+                    entities = null;
+                }
+            }
         }
     }
 }

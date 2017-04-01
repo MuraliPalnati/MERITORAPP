@@ -28,15 +28,44 @@ namespace MERITOR.StockRoom.DataAccess.Generic
             }
         }
 
-        #region IDisposable Support
-        private readonly bool disposedValue = false; // To detect redundant calls
+        //#region IDisposable Support
+        //private readonly bool disposedValue = false; // To detect redundant calls
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
-          
-            oracleDBentities.Dispose();
-            sqlDBentities.Dispose();
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
-        #endregion
+        ~BaseDataAccess()
+        {
+            // Finalizer calls Dispose(false)  
+            //Dispose(false);
+            Dispose(true);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                // free managed resources  
+                if (oracleDBentities != null)
+                {
+                    oracleDBentities.Dispose();
+                    oracleDBentities = null;
+                }
+                if (sqlDBentities != null)
+                {
+                    sqlDBentities.Dispose();
+                    sqlDBentities = null;
+                }
+            }
+        }
+
+        //void IDisposable.Dispose()
+        //{
+
+        //    oracleDBentities.Dispose();
+        //    sqlDBentities.Dispose();
+        //}
+        //#endregion
     }
 }

@@ -30,12 +30,13 @@ namespace MERITOR.StockRoom.DataEntity
                             break;
                         }
                 }
+                return connString;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw ;
             }
-            return connString;
+
         }
     }
 }

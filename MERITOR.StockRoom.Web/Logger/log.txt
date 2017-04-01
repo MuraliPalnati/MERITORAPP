@@ -94,3 +94,34 @@
  ERROR 2017-04-01 01:25:40,433 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
  ERROR 2017-04-01 13:46:21,232 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
  ERROR 2017-04-01 15:40:38,924 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:02:38,739 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:07:29,404 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:07:29,582 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select The operation cannot be completed because the DbContext has been disposed. 
+ ERROR 2017-04-01 16:07:29,592 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add The operation cannot be completed because the DbContext has been disposed. 
+ ERROR 2017-04-01 16:07:40,437 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception The operation cannot be completed because the DbContext has been disposed. 
+ ERROR 2017-04-01 16:07:48,971 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:07:49,456 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:12:24,132 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:38:40,792 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:39:36,131 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-01 16:39:49,696 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-01 16:40:00,134 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-01 16:40:15,781 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:44:14,865 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:44:36,132 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-01 16:44:38,989 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-01 16:45:05,546 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-01 16:45:13,985 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:51:21,916 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-01 16:51:21,946 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-01 16:51:26,878 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-01 16:51:33,171 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:51:50,858 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:51:54,032 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-01 16:51:54,041 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-01 16:52:23,911 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-01 16:52:29,228 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:53:03,465 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-01 16:53:05,687 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-01 16:53:05,688 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-01 16:53:05,691 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 

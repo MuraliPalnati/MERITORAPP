@@ -23,20 +23,28 @@ namespace MERITOR.StockRoom.DataAccess
         {
             try
             {
-                getDbEntity("Oracle");
-                var resp = oracleDBentities.Database.SqlQuery<EMPLOYEE>("SELECT * FROM EMPLOYEE").ToList<EMPLOYEE>();
-                var response = GenericAutoMapper<EMPLOYEE, EMP>.listObjectMapper(resp);
-                oracleDBentities.Dispose();
-                return response;
+                //getDbEntity("Oracle");
+                //var resp = oracleDBentities.Database.SqlQuery<EMPLOYEE>("SELECT * FROM EMPLOYEE").ToList<EMPLOYEE>();
+                //var response = GenericAutoMapper<EMPLOYEE, EMP>.listObjectMapper(resp);
+                ////oracleDBentities.Dispose();
+                //return response;
 
                 /*string query = "SELECT* FROM EMPLOYEE";
                 GenericRepository<EMPLOYEE> a = new GenericRepository<EMPLOYEE>();
                 var resp = a.selectNativeQuery(query);*/
+                int a = 0;
+                int b = 0;
+                int c = a / b;
+                return null;
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.Message);
             }
+            //finally
+            //{
+            //    base.Dispose();
+            //}
         }
     }
 }

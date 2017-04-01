@@ -49,7 +49,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
             catch (Exception e)
             {
                 logger.Error("Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add " + e.Message);
-                throw e;
+                 throw new Exception(e.Message);
                 //return RedirectToAction("GlobalError", "Error",new { exception = e.Message });
                 //return RedirectToAction("Delete", "DI",new { name = e.Message });
             }
@@ -67,7 +67,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
             catch (Exception e)
             {
                 logger.Error("Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add " + e.Message);
-                throw e;
+                 throw new Exception(e.Message);
             }
         }
         public string Delete(string name)

@@ -37,7 +37,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             }
             catch (Exception exp)
             {
-                throw exp;
+                 throw new Exception(exp.Message);
             }
             return null;
         }
@@ -56,11 +56,11 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             }
             catch (HttpException exp)
             {
-                throw exp;
+                 throw new Exception(exp.Message);
             }
             catch (Exception exp)
             {
-                throw exp;
+                 throw new Exception(exp.Message);
             }
 
         }
@@ -80,7 +80,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             }
             catch (Exception exp)
             {
-                throw exp;
+                 throw new Exception(exp.Message);
             }
         }
 
@@ -129,7 +129,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             }
             catch (HttpException exp)
             {
-                throw exp;
+                 throw new Exception(exp.Message);
             }
         }
 
@@ -156,7 +156,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             }
             catch (Exception exp)
             {
-                throw exp;
+                 throw new Exception(exp.Message);
             }
         }
        
@@ -195,7 +195,7 @@ namespace MERITOR.StockRoom.Web.GenericHandler
             }
             catch (HttpException exp)
             {
-                throw exp;
+                 throw new Exception(exp.Message);
             }
         }
     }
