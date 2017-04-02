@@ -10,7 +10,7 @@ namespace MERITOR.StockRoom.Util
 {
     public class ResourceFileHandler
     {
-        public static void writeResourceFile(string keyInput, string valueInput)
+        public static void WriteResourceFile(string keyInput, string valueInput)
         {
             try
             {
@@ -26,7 +26,7 @@ namespace MERITOR.StockRoom.Util
                 throw new Exception("Error in Writing to the resource File." + ex.Message);
             }
         }
-        public static string readResourceFile(string keyInput)
+        public static string ReadResourceFile(string keyInput)
         {
             try
             {

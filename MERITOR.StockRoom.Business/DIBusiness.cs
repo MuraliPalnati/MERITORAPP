@@ -57,7 +57,7 @@ namespace MERITOR.StockRoom.Business
                 else
                 {
                     employee.ErrorMessage.Add("message2", "Object is not null");
-                    ResourceFileHandler.writeResourceFile("message2", "Object is not null");
+                    ResourceFileHandler.WriteResourceFile("message2", "Object is not null");
                 }
                 var response = repo.select(e);
 

@@ -248,3 +248,117 @@
  ERROR 2017-04-02 02:36:55,428 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
  ERROR 2017-04-02 02:37:06,967 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
  ERROR 2017-04-02 02:38:25,356 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 03:58:32,303 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 04:06:41,230 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 04:06:41,253 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:06:56,076 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 04:06:56,084 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:08:31,504 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 04:08:33,003 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:21:41,377 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 04:21:43,184 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:26:46,092 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 04:26:46,100 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:26:50,073 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:26:58,658 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 04:26:58,666 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:39:25,941 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 04:41:55,325 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --The view 'Error' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Account/Error.aspx
+~/Views/Account/Error.ascx
+~/Views/Shared/Error.aspx
+~/Views/Shared/Error.ascx
+~/Views/Account/Error.cshtml
+~/Views/Account/Error.vbhtml
+~/Views/Shared/Error.cshtml
+~/Views/Shared/Error.vbhtml 
+ ERROR 2017-04-02 04:41:55,344 MERITOR.StockRoom.Web.Controllers.ErrorController - GlobalError 
+ ERROR 2017-04-02 04:48:38,220 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 04:49:39,938 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 04:55:04,512 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 05:01:43,578 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 05:05:54,226 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 10:57:37,412 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 11:02:34,653 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 11:12:53,311 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 11:14:23,865 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 11:14:29,552 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 12:00:33,776 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 12:20:44,610 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 12:29:35,016 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 12:39:43,856 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 14:51:39,440 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Could not load file or assembly 'Oracle.Web, Version=4.121.2.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The system cannot find the file specified. (C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config line 262) 
+ ERROR 2017-04-02 14:51:40,156 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Could not load file or assembly 'Oracle.Web, Version=4.121.2.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The system cannot find the file specified. (C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config line 262) 
+ ERROR 2017-04-02 14:51:53,880 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Could not load file or assembly 'Oracle.Web, Version=4.121.2.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The system cannot find the file specified. (C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config line 262) 
+ ERROR 2017-04-02 14:51:54,755 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Could not load file or assembly 'Oracle.Web, Version=4.121.2.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The system cannot find the file specified. (C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config line 262) 
+ ERROR 2017-04-02 14:51:55,022 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Could not load file or assembly 'Oracle.Web, Version=4.121.2.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The system cannot find the file specified. (C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config line 262) 
+ ERROR 2017-04-02 14:52:24,313 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Could not load file or assembly 'Oracle.Web, Version=4.121.2.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The system cannot find the file specified. (C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config line 262) 
+ ERROR 2017-04-02 14:52:24,494 MERITOR.StockRoom.Web.MvcApplication - Gloabl Error Handler --Could not load file or assembly 'Oracle.Web, Version=4.121.2.1, Culture=neutral, PublicKeyToken=89b483f429c47342' or one of its dependencies. The system cannot find the file specified. (C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\machine.config line 262) 
+ ERROR 2017-04-02 14:56:31,116 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 14:56:34,582 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-02 14:56:34,778 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-02 14:56:39,482 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-02 14:56:44,249 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:00:03,523 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:00:31,956 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-02 15:00:31,968 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-02 15:00:36,359 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-02 15:00:44,520 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:05:11,438 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:05:40,395 MERITOR.StockRoom.Business.DIBusiness - Error from MERITOR.StockRoom.Rest.Areas.Manage.Controllers.DIServiceController.select Attempted to divide by zero. 
+ ERROR 2017-04-02 15:05:40,409 MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController - Error from MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Add Attempted to divide by zero. 
+ ERROR 2017-04-02 15:05:51,427 MERITOR.StockRoom.Web.GenericHandler.ErrorHandler - Error from Controller MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController Method select Exception Attempted to divide by zero. 
+ ERROR 2017-04-02 15:33:52,583 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:39:29,409 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:40:27,259 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:42:17,164 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:52:52,894 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 
+ ERROR 2017-04-02 15:57:26,580 MERITOR.StockRoom.Web.Controllers.ErrorController - NotFound 

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MERITOR.StockRoom.Web.Controllers
 {
@@ -17,6 +18,7 @@ namespace MERITOR.StockRoom.Web.Controllers
             return View();
         }
         [HttpPost]
+        //[ValidateAntiForgeryToken]
         public ActionResult Login(Login login)
         {
             if (ModelState.IsValid)
@@ -34,17 +36,19 @@ namespace MERITOR.StockRoom.Web.Controllers
                     SessionPerister.ASSIGNEDROLES = response.Roles;
                     SessionPerister.ID = response.Id.ToString();
                     SessionPerister.NAME = response.UserName;
-
+                    string id = SessionPerister.ID;
+                    //FormsAuthentication.SetAuthCookie(id, false);
+                    //HttpContext.Request.IsAuthenticated { true};
                     return RedirectToAction("Index", "DI", new { area = "Manage" });
                 }
                 else
                 {
                     return RedirectToAction("Login", "Account", TempData["ExMessage"] = "Invaid User Please Login Again");
-                    //return RedirectToAction("Login", "Account");
                 }
             }
             else
             {
+                ModelState.AddModelError("ErrorMessage", "Invalid login attempt.");
                 return View(login);
             }
 
@@ -54,14 +58,6 @@ namespace MERITOR.StockRoom.Web.Controllers
             Session.RemoveAll();
             Session.Abandon();
             return View();
-        }
-
-
-        [HttpGet]
-
-        public JsonResult Teja()
-        {
-            return Json("teja", JsonRequestBehavior.AllowGet);
         }
     }
 }

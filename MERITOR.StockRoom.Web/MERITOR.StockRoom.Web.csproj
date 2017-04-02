@@ -243,6 +243,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\CustomAuthorize.cs" />
+    <Compile Include="Security\CustomPrincipal.cs" />
     <Compile Include="Security\SessionPerister.cs" />
     <Compile Include="Service References\DIWebService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -266,6 +267,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\LogOut.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

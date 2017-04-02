@@ -32,10 +32,9 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
 
 
         // GET: Manage/DI
-        //[CustomAuthorize]
+        [CustomAuthorize(Roles ="Admin",Users ="t")]
         public ActionResult Index()
         {
-            
             logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index");
             return View();
         }
@@ -47,7 +46,7 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
                 logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.select");
                 var response = handler.select(null);
                 logger.Debug("Executed  Response from Handler");
-                string value= ResourceFileHandler.readResourceFile("message2");
+                string value= ResourceFileHandler.ReadResourceFile("message2");
                 return Json(response, JsonRequestBehavior.AllowGet);
             }
             catch (Exception e)

@@ -16,5 +16,8 @@ namespace MERITOR.StockRoom.DomainEntity
         [Required(ErrorMessage = "Please Enter Password")]
         public string Password { get; set; }
         public string Roles { get; set; }
+
+        public string ErrorMessage { get; set; }
+
     }
 }

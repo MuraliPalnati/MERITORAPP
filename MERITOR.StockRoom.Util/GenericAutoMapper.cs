@@ -11,7 +11,7 @@ namespace MERITOR.StockRoom.Util
     public sealed class GenericAutoMapper<T1, T2>
     {
 
-        public static List<T2> listObjectMapper(List<T1> input)
+        public static List<T2> ListObjectMapper(List<T1> input)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace MERITOR.StockRoom.Util
             }
 
         }
-        public static T2 objectMapp(T1 input)
+        public static T2 ObjectMapp(T1 input)
         {
             try
             {
