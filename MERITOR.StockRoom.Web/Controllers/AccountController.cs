@@ -13,23 +13,17 @@ namespace MERITOR.StockRoom.Web.Controllers
     {
         // GET: Account
         public ActionResult Login()
-        { 
+        {
             ViewBag.ErrorMessage = TempData["ExMessage"];
             return View();
         }
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [CustomAuthorize]
         public ActionResult Login(Login login)
         {
             if (ModelState.IsValid)
             {
-                List<Login> log = new List<Login>()
-            {
-                new Login {Id=1, UserName = "teja" , Password = "teja",Roles="Admin" },
-                new Login {Id=2, UserName = "tej" , Password = "tej",Roles="View" },
-                new Login {Id=3, UserName = "te" , Password = "te",Roles="View" },
-                new Login {Id=4, UserName = "t" , Password = "t",Roles="Admin" },
-            };
+                var log = UserList();
                 var response = log.Where(x => (x.UserName == login.UserName && x.Password == login.Password)).FirstOrDefault<Login>();
                 if (response != null)
                 {
@@ -51,7 +45,27 @@ namespace MERITOR.StockRoom.Web.Controllers
                 ModelState.AddModelError("ErrorMessage", "Invalid login attempt.");
                 return View(login);
             }
+        }
 
+        [HttpPost]
+        [CustomAuthorize]
+        public bool IsValidUser(Login login)
+        {
+            var log = UserList();
+            bool response = log.Where(x => (x.UserName == login.UserName)).Count()>0?true:false;
+            return response;
+        }
+
+        public List<Login> UserList()
+        {
+            List<Login> log = new List<Login>()
+            {
+                new Login {Id=1, UserName = "teja" , Password = "teja",Roles="Admin" },
+                new Login {Id=2, UserName = "tej" , Password = "tej",Roles="View" },
+                new Login {Id=3, UserName = "te" , Password = "te",Roles="View" },
+                new Login {Id=4, UserName = "t" , Password = "t",Roles="Admin" },
+            };
+            return log;
         }
         public ActionResult LogOut()
         {

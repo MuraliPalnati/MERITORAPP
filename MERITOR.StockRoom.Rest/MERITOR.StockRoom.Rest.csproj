@@ -168,6 +168,7 @@
     <Compile Include="Areas\LoadService\LoadAreaRegistration.cs" />
     <Compile Include="Areas\ManageService\Controllers\DIServiceController.cs" />
     <Compile Include="Areas\ManageService\ManageAreaRegistration.cs" />
+    <Compile Include="Controllers\AuthServiceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,6 +190,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\LoadService\Views\Shared\" />
     <Folder Include="Areas\ManageService\Views\Shared\" />
+    <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MERITOR.StockRoom.BusinessInterface\MERITOR.StockRoom.BusinessInterface.csproj">

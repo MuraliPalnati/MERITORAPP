@@ -8,12 +8,17 @@
             UserName: $('#UserName').val(),
         };
         var successFn = function (data, response, xhr) {
-            alert('successFn');
+            if (data) {
+                $('#ErrorMessage').val("Valid User");
+            }
+            else {
+                $('#ErrorMessage').val("InValid User");
+            }
         };
         var errorFn = function (data, response, hhr) {
             alert('errorFn');
         };
-        meritor.ajaxCall('/Account/Login', 'POST', login, successFn, errorFn,headers);
+        meritor.ajaxCall('/Account/IsValidUser', 'POST', login, successFn, errorFn, headers);
 
         //meritor.ajaxCall('/Account/Teja', 'GET', null, successFn, errorFn);
     });

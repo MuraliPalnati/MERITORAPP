@@ -32,7 +32,8 @@ namespace MERITOR.StockRoom.Web.Areas.Manage.Controllers
 
 
         // GET: Manage/DI
-        [CustomAuthorize(Roles ="Admin",Users ="t")]
+        //[CustomAuthorize(Roles ="Admin",Users ="t")]
+        [CustomAuthorize]
         public ActionResult Index()
         {
             logger.Debug("Executing MERITOR.StockRoom.Web.Areas.Manage.Controllers.DIController.Index");
