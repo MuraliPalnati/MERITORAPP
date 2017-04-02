@@ -18,29 +18,30 @@ namespace MERITOR.StockRoom.Web.Security
             //{
 
             //}
-            //if (string.IsNullOrEmpty(SessionPerister.ID))
-            //    filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Account", Action = "Login", area = "" }));
-            //else
-            //{
-            //    CustomPrincipal mp = new CustomPrincipal(SessionPerister.ID);
-
-            //    Roles = SessionPerister.ASSIGNEDROLES;
-            //    Users = SessionPerister.NAME;
-
-            //filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Home", Action = "Logout" }));
-            try
+            if (string.IsNullOrEmpty(SessionPerister.ID))
+                filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Account", Action = "Login", area = "" }));
+            else
             {
-                var cookie = filterContext.HttpContext.Request.Cookies[AntiForgeryConfig.CookieName];
-                var ajaxToken = filterContext.HttpContext.Request.Headers["__RequestVerificationToken"];
-                var formToken = ((System.Web.HttpRequestWrapper)((System.Web.Mvc.Controller)filterContext.Controller).Request).Form["__RequestVerificationToken"];
+                CustomPrincipal mp = new CustomPrincipal(SessionPerister.ID);
+                Roles = SessionPerister.ASSIGNEDROLES;
+                Users = SessionPerister.NAME;
+                //filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Home", Action = "Logout" }));
+                try
+                {
+                    var cookie = filterContext.HttpContext.Request.Cookies[AntiForgeryConfig.CookieName];
+                    var ajaxToken = filterContext.HttpContext.Request.Headers["__RequestVerificationToken"];
+                    var formToken = ((System.Web.HttpRequestWrapper)((System.Web.Mvc.Controller)filterContext.Controller).Request).Form["__RequestVerificationToken"];
 
-                var tok = ajaxToken != null ? ajaxToken : formToken;
+                    var tok = ajaxToken != null ? ajaxToken : formToken;
 
-                AntiForgery.Validate(cookie != null ? cookie.Value : null, tok);
+                    AntiForgery.Validate(cookie != null ? cookie.Value : null, tok);
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("CSRF ERROR " + e.Message);
+                }
+
             }
-            catch (Exception e) { throw; }
-
-            //}
         }
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
@@ -68,7 +69,6 @@ namespace MERITOR.StockRoom.Web.Security
                 filterContext.HttpContext.Response.End();
                 filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Error", Action = "Unauthorized" }));
             }
-
             base.HandleUnauthorizedRequest(filterContext);
         }
     }

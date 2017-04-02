@@ -48,7 +48,7 @@ namespace MERITOR.StockRoom.Web.Controllers
         }
 
         [HttpPost]
-        [CustomAuthorize]
+        //[CustomAuthorize]
         public bool IsValidUser(Login login)
         {
             var log = UserList();
