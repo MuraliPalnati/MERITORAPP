@@ -13,7 +13,7 @@ namespace MERITOR.StockRoom.Web.Controllers
     {
         // GET: Account
         public ActionResult Login()
-        {
+        { 
             ViewBag.ErrorMessage = TempData["ExMessage"];
             return View();
         }
