@@ -22,24 +22,31 @@ namespace MERITOR.StockRoom.Web.Security
                 filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Account", Action = "Login", area = "" }));
             else
             {
-                CustomPrincipal mp = new CustomPrincipal(SessionPerister.ID);
-                Roles = SessionPerister.ASSIGNEDROLES;
-                Users = SessionPerister.NAME;
+                //CustomPrincipal mp = new CustomPrincipal(SessionPerister.ID);
+                //Roles = SessionPerister.ASSIGNEDROLES;
+                //Users = SessionPerister.NAME;
+
+                //CustomPrincipal mp = new CustomPrincipal("KI");
+
                 //filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Home", Action = "Logout" }));
-                try
+                if (filterContext.HttpContext.Request.IsAjaxRequest() || filterContext.HttpContext.Request.HttpMethod.ToString() == "POST")
                 {
-                    var cookie = filterContext.HttpContext.Request.Cookies[AntiForgeryConfig.CookieName];
-                    var ajaxToken = filterContext.HttpContext.Request.Headers["__RequestVerificationToken"];
-                    var formToken = ((System.Web.HttpRequestWrapper)((System.Web.Mvc.Controller)filterContext.Controller).Request).Form["__RequestVerificationToken"];
+                    try
+                    {
+                        var cookie = filterContext.HttpContext.Request.Cookies[AntiForgeryConfig.CookieName];
+                        var ajaxToken = filterContext.HttpContext.Request.Headers["__RequestVerificationToken"];
+                        var formToken = ((System.Web.HttpRequestWrapper)((System.Web.Mvc.Controller)filterContext.Controller).Request).Form["__RequestVerificationToken"];
 
-                    var tok = ajaxToken != null ? ajaxToken : formToken;
+                        var tok = ajaxToken != null ? ajaxToken : formToken;
 
-                    AntiForgery.Validate(cookie != null ? cookie.Value : null, tok);
+                        AntiForgery.Validate(cookie != null ? cookie.Value : null, tok);
+                    }
+                    catch (Exception e)
+                    {
+                        throw new Exception("CSRF ERROR " + e.Message);
+                    }
                 }
-                catch (Exception e)
-                {
-                    throw new Exception("CSRF ERROR " + e.Message);
-                }
+
 
             }
         }

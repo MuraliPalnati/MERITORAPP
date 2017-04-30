@@ -1,0 +1,23 @@
+﻿@model MERITOR.StockRoom.DomainEntity.Login
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<script src="~/Scripts/Meritor/Login.js"></script>
+GET REQUEST
+
+
+@Html.TextBoxFor(m => m.UserName)<br />
+<input type="button" value="teja" id="teja" />
+
+
+
+@using (Html.BeginForm("ravi", "Teja", FormMethod.Post))
+{
+    @Html.TextBoxFor(m => m.UserName)<br />
+    @Html.AntiForgeryToken()
+    <input type="submit" value="sri22" id="sri22" />
+}
+

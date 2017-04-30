@@ -3,6 +3,8 @@ using MERITOR.StockRoom.Web.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
+using System.Security.Principal;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -18,7 +20,7 @@ namespace MERITOR.StockRoom.Web.Controllers
             return View();
         }
         [HttpPost]
-        [CustomAuthorize]
+        //[CustomAuthorize(Roles="k",Users ="t")]
         public ActionResult Login(Login login)
         {
             if (ModelState.IsValid)
@@ -31,6 +33,7 @@ namespace MERITOR.StockRoom.Web.Controllers
                     SessionPerister.ID = response.Id.ToString();
                     SessionPerister.NAME = response.UserName;
                     string id = SessionPerister.ID;
+                    //GenericPrincipal gp = new GenericPrincipal(Context.User.Identity, rolesArray);
                     //FormsAuthentication.SetAuthCookie(id, false);
                     //HttpContext.Request.IsAuthenticated { true};
                     return RedirectToAction("Index", "DI", new { area = "Manage" });

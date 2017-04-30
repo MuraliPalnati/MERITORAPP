@@ -23,4 +23,19 @@
         meritor.ajaxCall('/Account/IsValidUser', 'POST', login, successFn, errorFn);
         //meritor.ajaxCall('/Account/Teja', 'GET', null, successFn, errorFn);
     });
+
+
+    $('#teja').click(function () {
+        alert('Hi');
+        var login = {
+            UserName: $('#UserName').val(),
+        };
+        var successFn = function (data, response, xhr) {
+            alert('errorFn');
+        };
+        var errorFn = function (data, response, hhr) {
+            alert('errorFn');
+        };
+        meritor.ajaxCall('/Teja/Kanu', 'POST', login, successFn, errorFn);
+    });
 });
